@@ -3,8 +3,7 @@ package 스택;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Deque;
-import java.util.LinkedList;
+import java.util.*;
 
 public class 오큰수_구하기 {
     public static void main(String[] args) throws IOException {
@@ -19,6 +18,7 @@ public class 오큰수_구하기 {
 
         Deque<Integer> dq = new LinkedList<>();
         dq.addLast(0);
+
         for (int i = 0; i < N; i++) {
             while(!dq.isEmpty() && A[dq.getLast()] < A[i]){
                 ans[dq.removeLast()] = A[i];
@@ -32,6 +32,5 @@ public class 오큰수_구하기 {
         for (int i = 0; i < N; i++) {
             System.out.print(ans[i] + " ");
         }
-
     }
 }

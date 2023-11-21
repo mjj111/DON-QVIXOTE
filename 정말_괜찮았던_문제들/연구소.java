@@ -1,4 +1,4 @@
-package 그래프_탐색;
+package 정말_괜찮았던_문제들;
 
 import java.io.BufferedReader;
 import java.io.IOException;
